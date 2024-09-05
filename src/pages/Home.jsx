@@ -1,6 +1,6 @@
 const Home = () => {
  return(
-    <section>
+    <section className="home">
         <h1>Esto es el home de mi aplicación</h1>
     </section>
  )   

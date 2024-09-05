@@ -1,6 +1,8 @@
+import './Login.css'
+
 const Login = () => {
   return (
-    <form action="">
+    <form className="loginForm" action="">
       <input placeholder="User" />
       <input placeholder="Password" />
       <input type="button" value="Login" />
