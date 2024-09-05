@@ -1,4 +1,5 @@
 import './Login.css'
+import {Link} from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -6,6 +7,7 @@ const Login = () => {
       <input placeholder="User" />
       <input placeholder="Password" />
       <input type="button" value="Login" />
+      <Link to='/register'>¿No tiene una cuenta?</Link>
     </form>
   );
 };
