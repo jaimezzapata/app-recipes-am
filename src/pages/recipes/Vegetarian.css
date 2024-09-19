@@ -1,0 +1,70 @@
+.card {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.card img {
+    bottom: 0;
+    width: 90%;
+    margin-bottom: 2%;
+}
+
+.card .botones {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.card .botones a {
+    text-decoration: none;
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card .botones .boton:hover {
+    background-color: black;
+    transition: ease-in-out all 0.5s;
+}
+
+.card .botones .boton::after {
+    content: '';
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    transition: ease-in-out all 0.5s;
+}
+
+.card .botones .boton:hover::after {
+    width: 40%;
+    transition: ease-in-out all 0.5s;
+}
+
+.card .botones a:nth-child(1) {
+    background-color: green;
+    color: white;
+}
+
+.card .botones a:nth-child(2) {
+    background-color: orange;
+    color: white;
+}
+
+.card .botones a:nth-child(3) {
+    background-color: red;
+    color: white;
+}
