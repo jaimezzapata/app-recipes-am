@@ -5,6 +5,7 @@ const Dashboard = () => {
   return (
     <main className="dashboard">
       <aside>
+        <Link to='/'>Home</Link>
         <Link to='vegetarian'>Vegetarian</Link>
         <Link to='non-vegetarian'>Non Vegetarian</Link>
       </aside>
