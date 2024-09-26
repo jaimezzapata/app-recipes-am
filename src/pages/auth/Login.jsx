@@ -1,15 +1,19 @@
 import './Login.css'
 import { users } from '../../data/dataUsers';
 import { Link, useNavigate } from 'react-router-dom'
+import { useState } from 'react';
 
 const Login = () => {
+  const [stateUser, setStateUser] = useState('')
+  const [statePassword, setStatePassword] = useState('')
+  console.log(stateUser)
   console.log(users)
   let redireccion = useNavigate()
   function iniciarSesion() {
-    if (users[0].user == 'admin') {
-      setTimeout(() => {
-        redireccion('/dashboard')
-      }, 2000)
+    if (users[0].user == stateUser) {
+      // setTimeout(() => {
+      redireccion('/dashboard')
+      // }, 2000)
     } else {
       console.log('Credenciales incorrectas')
     }
