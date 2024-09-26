@@ -35,14 +35,12 @@
 }
 
 .card .botones .boton:hover {
-    background-color: black;
     transition: ease-in-out all 0.5s;
 }
 
 .card .botones .boton::after {
     content: '';
-    height: 2px;
-    background-color: black;
+    height: 4px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -51,11 +49,26 @@
 }
 
 .card .botones .boton:hover::after {
-    width: 40%;
+    width: 100%;
     transition: ease-in-out all 0.5s;
 }
 
-.card .botones a:nth-child(1) {
+.card .botones .boton:nth-child(1):hover::after {
+    background-color: green;
+    color: white;
+}
+
+.card .botones a:nth-child(2):hover::after {
+    background-color: orange;
+    color: white;
+}
+
+.card .botones a:nth-child(3):hover::after {
+    background-color: red;
+    color: white;
+}
+
+.card .botones .boton:nth-child(1) {
     background-color: green;
     color: white;
 }
