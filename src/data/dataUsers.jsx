@@ -1,3 +1,5 @@
+import { generarId } from "../utils/functions"
+
 export let users = [
     {
         user: 'admin',
@@ -5,7 +7,7 @@ export let users = [
         name: 'Jaime Zapata',
         email: 'correo@correo.com',
         phone: '3246720301',
-        id: 'JZ1234'
+        id: generarId()
     },
     {
         user: 'super-admin',
@@ -13,6 +15,6 @@ export let users = [
         name: 'Camila Cuesta',
         email: 'correo@correo.com',
         phone: '3162002378',
-        id: 'CC1234'
+        id: generarId()
     },
 ]
