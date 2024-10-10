@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { recipesVegetarian } from "../../data/dataRecipes"
+// import { recipesVegetarian } from "../../data/dataRecipes"
 import './Vegetarian.css'
 const Vegetarian = () => {
   console.log(recipesVegetarian)

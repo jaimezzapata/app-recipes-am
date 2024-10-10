@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server":"json-server --port 3000 --watch src/data/dataUsers.json"
+    "server": "json-server --port 3000 --watch src/data/dataUsers.json"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3",
