@@ -5,7 +5,8 @@
       "password": 123456,
       "name": "Jaime Zapata",
       "email": "correo@correo.com",
-      "phone": "3152001282"
+      "phone": "3152001282",
+      "id": "0054"
     },
     {
       "id": "163a",
@@ -22,6 +23,30 @@
       "name": "Jaime Zapata",
       "email": "correo@correo.com",
       "phone": "3246720301"
+    },
+    {
+      "id": "7142",
+      "user": "jaimezzapata",
+      "email": "zapataval2304@gmail.com",
+      "name": "Jaime Zapata",
+      "password": "34523425",
+      "phone": "3246720301"
+    },
+    {
+      "id": "5024",
+      "user": "lalu",
+      "email": "lalu@gmail.com",
+      "name": "Luisa Cano",
+      "password": "123456",
+      "phone": "1235234"
+    },
+    {
+      "id": "b1a92946-fb64-4be3-acfb-b6dad27cb2af",
+      "user": "andre",
+      "email": "otrocorreo@gmail.com",
+      "name": "Andrea Perez",
+      "password": "1232314",
+      "phone": "43524"
     }
   ]
 }

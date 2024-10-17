@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { v4 } from 'uuid'
 import './Register.css'
 import { Link } from 'react-router-dom'
 let urlUsuarios = 'http://localhost:3000/users'
@@ -22,13 +23,14 @@ const Register = () => {
   }, [])
 
   function buscarUsuario() {
-    let auth = stateUsters.some((item) => stateUser == item.user && stateEmail == item.email)
+    let auth = stateUsters.some((item) => stateUser == item.user || stateEmail == item.email)
     console.log(auth)
     return auth
   }
 
   function createUser() {
     let newUser = {
+      id: v4(),
       user: stateUser,
       email: stateEmail,
       name: stateName,
@@ -39,12 +41,23 @@ const Register = () => {
       method: 'POST',
       body: JSON.stringify(newUser)
     })
-      .then()
-      .then()
+      .then(response => response.json())
+      .then(data => {
+        console.log('Usuario creado exitosamente', data)
+        // setStateName('')
+        // setStateUser('')
+        // setStatePassword('')
+        // setStatePhone('')
+        // setStateEmail('')
+      })
   }
 
   function registerUser() {
-    console.log('Registrando usuario')
+    if (buscarUsuario()) {
+      console.log('Usuario ya existe en la base de datos...')
+    } else {
+      createUser()
+    }
   }
 
   return (
