@@ -57,7 +57,7 @@ const Login = () => {
     }
   }
   function buscarUsuario() {
-    let auth = stateUsters.some((item) => stateUser == item.user)
+    let auth = stateUsters.some((item) => stateUser == item.user && statePassword == item.password)
     console.log(auth)
     return auth
   }
