@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 let urlRecipes = 'http://localhost:3000/vegetarians'
 
 const CreateVegetarian = () => {
@@ -10,6 +10,10 @@ const CreateVegetarian = () => {
             .then(response => response.json())
             .then(json => setStateRecipes(json))
     }
+
+    useEffect(() => {
+        getRecipes()
+    }, [])
 
     return (
         <form>

@@ -49,6 +49,21 @@
       "phone": "43524"
     }
   ],
-  "vegetarians": [],
+  "vegetarians": [
+    {
+      "nombre": "Risotto Básico",
+      "descripcion": "Rissoto básico con .....",
+      "tiempo": "1 hora",
+      "dificultad": "Media",
+      "img": "img"
+    },
+    {
+      "nombre": "Pastas al Pesto Rojo",
+      "descripcion": "Fetuccini largo con pesto rojo",
+      "tiempo": "1 hora",
+      "dificultad": "Media",
+      "img": "img"
+    }
+  ],
   "no-vegetarians": []
 }

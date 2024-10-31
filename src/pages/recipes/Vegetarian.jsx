@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 // import { recipesVegetarian } from "../../data/dataRecipes"
 import './Vegetarian.css'
 let urlRecipes = 'http://localhost:3000/vegetarians'
@@ -13,10 +13,14 @@ const Vegetarian = () => {
       .then(json => setStateRecipes(json))
   }
 
+  useEffect(() => {
+    getRecipes()
+  }, [])
+
   return (
     <div>
-      {/* {
-        recipesVegetarian.map((recipeVegetarian) => (
+      {
+        stateRecipes.map((recipeVegetarian) => (
           <div key={recipeVegetarian.id} className="card">
             <img src={recipeVegetarian.img} alt={recipeVegetarian.nombre} />
             <h3>Nombre: {recipeVegetarian.nombre}</h3>
@@ -30,7 +34,7 @@ const Vegetarian = () => {
             </section>
           </div>
         ))
-      } */}
+      }
     </div>
   )
 }
