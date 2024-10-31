@@ -63,6 +63,16 @@
       "tiempo": "1 hora",
       "dificultad": "Media",
       "img": "img"
+    },
+    {
+      "id": "966f",
+      "nombre": "Pastas Integrales",
+      "tipo": "Fuerte",
+      "dificultad": "Media",
+      "instrucciones": "Pastas de arroz",
+      "ingredientes": "Pasta, huevo, arroz, crema de leche",
+      "img": "asfdasdf",
+      "tiempo": "6"
     }
   ],
   "no-vegetarians": []

@@ -12,6 +12,7 @@ const Dashboard = () => {
       <section>
         <span className="glass"></span>
         <h2>Info de recetas</h2>
+        <Link to='create-vegetarian'>Crear Receta</Link>
         <Outlet />
       </section>
     </main>
