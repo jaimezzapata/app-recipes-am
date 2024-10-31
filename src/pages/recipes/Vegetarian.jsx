@@ -1,11 +1,21 @@
 import { Link } from "react-router-dom"
+import { useState } from 'react'
 // import { recipesVegetarian } from "../../data/dataRecipes"
 import './Vegetarian.css'
+let urlRecipes = 'http://localhost:3000/vegetarians'
+
 const Vegetarian = () => {
-  console.log(recipesVegetarian)
+  const [stateRecipes, setStateRecipes] = useState([])
+
+  function getRecipes() {
+    fetch(urlRecipes)
+      .then(response => response.json())
+      .then(json => setStateRecipes(json))
+  }
+
   return (
     <div>
-      {
+      {/* {
         recipesVegetarian.map((recipeVegetarian) => (
           <div key={recipeVegetarian.id} className="card">
             <img src={recipeVegetarian.img} alt={recipeVegetarian.nombre} />
@@ -20,7 +30,7 @@ const Vegetarian = () => {
             </section>
           </div>
         ))
-      }
+      } */}
     </div>
   )
 }

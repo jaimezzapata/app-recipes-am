@@ -3,9 +3,10 @@ import Register from '../pages/auth/Register'
 import Home from '../pages/Home'
 import ErrorNotFound from '../pages/ErrorNotFound'
 import Dashboard from '../pages/Dashboard'
-import { Children } from 'react'
 import Vegetarian from '../pages/recipes/Vegetarian'
 import NonVegetarian from '../pages/recipes/NonVegetarian'
+import CreateVegetarian from '../pages/recipes/crudVegetarians/CreateVegetarian'
+import UpdateVegetarian from '../pages/recipes/crudVegetarians/UpdateVegetarian'
 
 export let routes = [
     {
@@ -33,6 +34,14 @@ export let routes = [
                 path: 'non-vegetarian',
                 element: <NonVegetarian />
             },
+            {
+                path: 'create-vegetarian',
+                element: <CreateVegetarian />
+            },
+            {
+                path: 'update-vegetarian',
+                element: <UpdateVegetarian />
+            }
         ]
     }
 ]

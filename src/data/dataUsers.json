@@ -2,10 +2,10 @@
   "users": [
     {
       "user": "admin",
-      "password": 123456,
+      "email": "zapataval2304@gmail.com",
       "name": "Jaime Zapata",
-      "email": "correo@correo.com",
-      "phone": "3152001282",
+      "password": "1234",
+      "phone": "3246720301",
       "id": "0054"
     },
     {
@@ -48,5 +48,7 @@
       "password": "1232314",
       "phone": "43524"
     }
-  ]
+  ],
+  "vegetarians": [],
+  "no-vegetarians": []
 }
