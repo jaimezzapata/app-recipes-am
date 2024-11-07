@@ -55,14 +55,16 @@
       "descripcion": "Rissoto básico con .....",
       "tiempo": "1 hora",
       "dificultad": "Media",
-      "img": "img"
+      "img": "img",
+      "id": "154d"
     },
     {
       "nombre": "Pastas al Pesto Rojo",
       "descripcion": "Fetuccini largo con pesto rojo",
       "tiempo": "1 hora",
       "dificultad": "Media",
-      "img": "img"
+      "img": "img",
+      "id": "155d"
     },
     {
       "id": "966f",
@@ -73,6 +75,16 @@
       "ingredientes": "Pasta, huevo, arroz, crema de leche",
       "img": "asfdasdf",
       "tiempo": "6"
+    },
+    {
+      "id": "ce75",
+      "nombre": "Tofu",
+      "tipo": "Ensalada",
+      "dificultad": "Media",
+      "instrucciones": "Preparacióna base de tofu",
+      "ingredientes": "Soya",
+      "img": ".",
+      "tiempo": "2"
     }
   ],
   "no-vegetarians": []

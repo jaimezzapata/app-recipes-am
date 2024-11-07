@@ -18,7 +18,7 @@ const Vegetarian = () => {
   }, [])
 
   return (
-    <div>
+    <div className="cards">
       {
         stateRecipes.map((recipeVegetarian) => (
           <div key={recipeVegetarian.id} className="card">
