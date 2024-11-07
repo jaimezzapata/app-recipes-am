@@ -51,14 +51,6 @@
   ],
   "vegetarians": [
     {
-      "nombre": "Risotto Básico",
-      "descripcion": "Rissoto básico con .....",
-      "tiempo": "1 hora",
-      "dificultad": "Media",
-      "img": "img",
-      "id": "154d"
-    },
-    {
       "nombre": "Pastas al Pesto Rojo",
       "descripcion": "Fetuccini largo con pesto rojo",
       "tiempo": "1 hora",
@@ -67,24 +59,20 @@
       "id": "155d"
     },
     {
-      "id": "966f",
-      "nombre": "Pastas Integrales",
-      "tipo": "Fuerte",
+      "nombre": "Pastas al Pesto Rojo con Calabacín",
+      "descripcion": "Fetuccini largo con pesto rojo y calabacín asado, adornado con queso parmesano",
+      "tiempo": "55 minutos",
       "dificultad": "Media",
-      "instrucciones": "Pastas de arroz",
-      "ingredientes": "Pasta, huevo, arroz, crema de leche",
-      "img": "asfdasdf",
-      "tiempo": "6"
+      "img": "https://example.com/pasta-pesto-rojo-calabacin.jpg",
+      "id": "155d-3"
     },
     {
-      "id": "ce75",
-      "nombre": "Tofu",
-      "tipo": "Ensalada",
-      "dificultad": "Media",
-      "instrucciones": "Preparacióna base de tofu",
-      "ingredientes": "Soya",
-      "img": ".",
-      "tiempo": "2"
+      "nombre": "Pastas al Pesto Rojo con Nueces",
+      "descripcion": "Fetuccini largo con pesto rojo a base de nueces, más cremoso y con un toque diferente",
+      "tiempo": "45 minutos",
+      "dificultad": "Fácil",
+      "img": "https://example.com/pasta-pesto-rojo-nueces.jpg",
+      "id": "155d-4"
     }
   ],
   "no-vegetarians": []
