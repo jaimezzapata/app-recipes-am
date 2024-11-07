@@ -56,7 +56,7 @@ const Vegetarian = () => {
             <p>Tiempo: {recipeVegetarian.tiempo}</p>
             <section className="botones">
               <Link className="boton">Detalle</Link>
-              <Link className="boton">Editar</Link>
+              <Link to={'/dashboard/update-vegetarian/' + recipeVegetarian.id} className="boton">Editar</Link>
               <button type="button" onClick={() => confirmDelete(recipeVegetarian.id, recipeVegetarian.nombre)} className="boton">Eliminar</button>
             </section>
           </div>

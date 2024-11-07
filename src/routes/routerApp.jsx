@@ -23,7 +23,7 @@ export let routes = [
         errorElement: <ErrorNotFound />
     },
     {
-        path: '/dashboard/',
+        path: '/dashboard',
         element: <Dashboard />,
         children: [
             {
@@ -39,7 +39,7 @@ export let routes = [
                 element: <CreateVegetarian />
             },
             {
-                path: 'update-vegetarian',
+                path: 'update-vegetarian/:id',
                 element: <UpdateVegetarian />
             }
         ]
